@@ -67,6 +67,7 @@ img {
   width: 400px;
 }
 
+
 .spincar {
   position: relative;
   background-image: url('http://users.rescomp.berkeley.edu/~carinaboo/workshop/images/car.jpg');
@@ -78,18 +79,18 @@ img {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -webkit-animation-direction: normal;
-  -webkit-animation-play-state: paused;
+  -webkit-animation-play-state:paused;
 }
 
 .spincar .wheel {
   width: 80px;
   position: absolute;
   top: 55px;
-  -webkit-animation-name: spin;
+
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-play-state: paused; 
+  -webkit-animation-play-state: running; 
   /* -play-state might be useful to change */
 }
 
@@ -115,7 +116,7 @@ img {
     -webkit-transform:rotate(0deg);
   }
   to {
-    /* fill me out */
+    -webkit-transform:rotate(360deg);
   }
 }
 
@@ -126,6 +127,7 @@ img {
 .nyancat {
     height: 100px;
     width: 140px;
+    left: 140px;
     position: absolute;
 }
 .rainbows {
